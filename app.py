@@ -6,4 +6,8 @@ app = Flask(__name__)
 def home():
     return 'Hello, web! :3'
 
+@app.route('/bye')
+def bye():
+    return 'Bye! ;-;'
+
 app.run(debug=True)
