@@ -8,8 +8,8 @@
 
             {% for task in tasks: %}
             <tr>
-                <td>Linha 1, Coluna 1</td>
-                <td>Linha 1, Coluna 2</td>
+                <td>{{task('name')}}</td>
+                <td>{{task('finished')}}</td>
             </tr>
             {% endfor %}
         </table>
